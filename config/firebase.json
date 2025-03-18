@@ -1,0 +1,9 @@
+{
+    "emulators": {
+      "apphosting": {
+        "port": 5002,
+        "startCommand": "npm start" 
+      }
+
+    }
+  }
