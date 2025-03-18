@@ -1,0 +1,8 @@
+name: Analyze Survey Results  
+on: [schedule]  
+jobs:  
+  analyze:  
+    runs-on: ubuntu-latest  
+    steps:  
+      - uses: actions/checkout@v4  
+      - run: python3 analyze_survey.py  

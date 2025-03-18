@@ -1,0 +1,9 @@
+name: Validate Agent Protocol  
+on: [push]  
+jobs:  
+  validate:  
+    runs-on: ubuntu-latest  
+    steps:  
+      - uses: actions/checkout@v4  
+      - run: npm install -g ajv-cli  
+      - run: ajv validate -s agent_protocol.schema.json -d agent_protocol.json  
